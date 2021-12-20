@@ -19,6 +19,14 @@ fun main(args: Array<String>) {
         println(collection[i])
     }
 
+    for (name in collection) {
+        println(name)
+    }
+
+    collection.forEach {
+        println("Names : $it")
+    }
+
     val fruits: MutableList<String> = ArrayList()
     fruits.add("Durian")
     fruits.add("Jackfruit")
