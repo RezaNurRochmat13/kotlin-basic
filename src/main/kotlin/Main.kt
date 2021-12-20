@@ -1,58 +1,14 @@
-fun main(args: Array<String>) {
+import entity.Person
+
+fun main() {
     println("Hello World!")
 
-    // Kotlin Variables
-    val name: String = "Manggala"
-    val age: Int = 29
-    val price: Long = 399
-    val flag: Boolean = false
+    val person1 = Person("Andra", 29, "California")
 
-    println(name)
-    println(age)
-    println(price)
-    println(flag)
-
-    // Kotlin Array
-    val collection = arrayOf("Andra", "Andi", "Manggala")
-
-    for (i in collection.indices) {
-        println(collection[i])
-    }
-
-    for (name in collection) {
-        println(name)
-    }
-
-    collection.forEach {
-        println("Names : $it")
-    }
-
-    val fruits: MutableList<String> = ArrayList()
-    fruits.add("Durian")
-    fruits.add("Jackfruit")
-    fruits.add("Apple")
-
-    println(fruits)
-
-    // Kotlin conditions and loops
-    val branch: String = "Jakarta"
-
-    // If else conditions
-    if (branch == "Jakarta") {
-        println("Jakarta branch")
-    } else {
-        println("Not jakarta branch")
-    }
-
-    // Switch case
-    when(branch) {
-        "Jakarta" -> println("Jakarta branch")
-        else -> {
-            println("Not jakarta branch")
-        }
-    }
-
-
+    println(person1.name)
+    println(person1.age)
+    println(person1.address)
+    person1.speak()
 
 
 }
