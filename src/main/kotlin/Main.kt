@@ -1,14 +1,16 @@
-import entity.Person
+import entity.Teacher
 
 fun main() {
     println("Hello World!")
 
-    val person1 = Person("Andra", 29, "California")
+    val teacher = Teacher("Wulan", 22, "Sleman")
 
-    println(person1.name)
-    println(person1.age)
-    println(person1.address)
-    person1.speak()
+    println(teacher.name)
+    println(teacher.age)
+    println(teacher.address)
+    teacher.speak()
+    teacher.eat("Pizza")
+    teacher.eat(21)
 
 
 }
